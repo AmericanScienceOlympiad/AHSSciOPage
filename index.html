@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
     <meta name="description" content="A page about the American High School Science Olympiad team!">
     <meta name="keywords" content="ahs, american high, science olympiad, scioly, ahs scioly, american science olympiad, american high science olympiad">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -67,18 +68,26 @@
 			<!-- One -->
 				<section class="wrapper style2">
 					<div class="inner intext">
-						<header class="align-center">
+						<header class="align-center" data-aos="fade-right">
 							<h2>Who Are We?</h2>
-							<p>AHS Science Olympiad consists of Team Blue and Team Red, each composed of 15 members. Each team member competes in 3-4 events spanning STEM subjects ranging from biology to engineering. Over the past few years, our teams have worked tremendously hard, each member clocking in at over 5 hours of dedicated work per week, both throughout the season and during offseason. American Science Olympiad is currently ranked 2nd throughout the highly competetive San Francisco Bay Area regional division and this is our sixth year qualifying for the Northern California States Tournament. With more ambition, rigourous preparation from our team, and stronger leadership than ever, we hope to reach our goal of being top 3 at states this season. </p>
+							<p>AHS Science Olympiad consists of Team Blue and Team Red, each composed of 15 members. Each team member competes in 3-4 events spanning STEM subjects ranging from biology to engineering. Over the past few years, our teams have worked tremendously hard, each member clocking in at over 5 hours of dedicated work per week, both throughout the season and during offseason. American Science Olympiad is currently ranked 2nd throughout the highly competetive San Francisco Bay Area regional division and this is our sixth year qualifying for the Northern California States Tournament. With more ambition, rigourous preparation from our team, and stronger leadership than ever, we hope to reach our goal of being top 3 at states this season.</p>
               <a href="teammembers.html" class="button big alt scrolly">Team Members</a>
 						</header>
 
-            <header class="align-center">
+            <header class="align-center" data-aos="fade-left">
 							<h2>What is Science Olympiad?</h2>
 							<!--<p></p> -->
               
               <p>Science Olympiad is a competition for middle (Division B) and high school (Division C) students featuring 23 events in many fields of science and engineering. Teams of up to 15 students work in pairs on a variety of events ranging from earth sciences to biological/ life sciences, chemistry, physics, and engineering events. One of the most unique features of Science Olympiad is that there are events for everyone — be it build or theory, one can explore their various interests through events such as Anatomy, Protein Modeling, and Wright Stuff! Competitions are held at regional, states, and national levels and invitiationals are conducted throughout the season.</p>
               <a href="https://www.soinc.org" class="button big alt scrolly">Learn More</a>
+						</header>
+
+            <header class="align-center" data-aos="fade-up">
+							<h2>Support the Team!</h2>
+							<!--<p></p> -->
+              
+              <p>If you are interested in donating to American High School Science Olympiad to help our team buy build materials, cover competition fees, and help us excel this season, please donate here.</p>
+              <a href="https://www.paypal.me/bfu2" class="button big alt scrolly">Donate</a>
 						</header>
 					</div>
 				</section>
@@ -92,7 +101,7 @@
 						</header>
 						<!-- Tabbed Video Section -->
 							<div class="flex flex-tabs">
-								<ul class="tab-list">
+								<ul class="tab-list" data-aos="fade-right">
 									<li><a href="#" data-tab="tab-1" class="active">Builds</a></li>
 									<li><a href="#" data-tab="tab-2">Awards</a></li>
                  
@@ -103,7 +112,7 @@
                     
 
 									<!-- Tab 1 -->
-										<div class="tab tab-1 flex flex-3 active">
+										<div class="tab tab-1 flex flex-3 active" data-aos="fade-left">
 											<!-- Video Thumbnail -->
 												<div class="video col">
 													<div class="image fit">
@@ -132,7 +141,7 @@
 										</div>
 
 									<!-- Tab 2 -->
-										<div class="tab tab-2 flex flex-3">
+										<div class="tab tab-2 flex flex-3" data-aos="fade-left">
 											<!-- Video Thumbnail -->
 												<div class="video col">
 													<div class="image fit">
@@ -316,6 +325,13 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init({
+          duration: 1200,
+        })
+      </script>
 
 	</body>
 </html>
