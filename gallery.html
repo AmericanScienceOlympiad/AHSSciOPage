@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script>
         var cnt = 0;
         function chng() {
@@ -50,6 +51,7 @@
           <li><a href="timeline.html">Past, Present, and Future</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact Us!</a></li>
+          <li><a href="index.html#donate"><strong>Donate</strong></a></li>
 				</ul>
 			</nav>
 
@@ -84,10 +86,6 @@
                 <iframe src="https://www.youtube.com/embed/uwOIlo_eL9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
 
-              <div class = "col">
-                <iframe src="https://www.youtube.com/embed/oHl_xV7cyfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-
             </div>
           </div>
 				</section>
@@ -103,27 +101,27 @@
 						<!-- 3 Column Video Section -->
 							<div class="flex flex-3">
 
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/pic1.png" alt="" onclick='zoom(0)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/pic2.jpg" alt="" onclick='zoom(1)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/pic3.jpg" alt="" onclick='zoom(2)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit tall">
 										<img src="images/pic6.png" alt="" onclick='zoom(3)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/pic5.jpg" alt="" onclick='zoom(4)'/>
 									</div>
@@ -133,22 +131,22 @@
 										<img src="images/pic6.png" alt="" />
 									</div>
 								</div>-->
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit tall">
 										<img src="images/pic7.png" alt="" onclick='zoom(5)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/pic8.jpg" alt="" onclick='zoom(6)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/pic9.png" alt="" onclick='zoom(7)'/>
 									</div>
 								</div>
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
 										<img src="images/award.jpg" alt="" onclick='zoom(8)'/>
 									</div>
@@ -204,6 +202,8 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
       <script>
         var index = 0;
         var pics = ["pic1.png", "pic2.jpg", "pic3.jpg", "pic6.png", "pic5.jpg", "pic7.png", "pic8.jpg", "pic9.png", "award.jpg"];
@@ -266,6 +266,9 @@
             } 
         };
 
+        AOS.init({
+          duration: 500,
+        })
       </script>
 	</body>
 </html>

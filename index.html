@@ -20,13 +20,23 @@
 	</head>
 	<body>
 
-
+    <!--<div id="loading">
+      <img id="loading-image" src="images/ajax-loader.gif" alt="Loading..." />
+    </div>-->
 
 		<!-- Header -->
 			<header id="header">
 				<h1><a href="index.html">Science Olympiad <span>American High School</span></a></h1>
 				<a href="#menu">Menu</a>
 			</header>
+
+    <!-- ALERT BANNER -->
+    <div class="alert">
+      We are hosting a popcorn fundraiser in partnership with Double Good Gourmet Popcorn! <a href="https://tinyurl.com/ahsdgorder" class="alert-link">Click here to buy from us</a>.
+
+      <div id = "alert2"> <span id = "close2"> &times; </span> </div>
+    </div>
+    <!-- end alert bannder -->
 
 		<!-- Nav -->
 			<nav id="menu">
@@ -39,6 +49,7 @@
           <li><a href="timeline.html">Past, Present, and Future</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact Us!</a></li>
+          <li><a href="index.html#donate"><strong>Donate</strong></a></li>
 				</ul>
 			</nav>
 
@@ -48,7 +59,7 @@
 				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
 				formats to work correctly.
 			-->
-				<section id="banner"  data-video = "images/banner">
+				<section id="banner"  data-video = "images/sBanner3">
 					<div class="inner">
 						<header>
 							<h1>American High School Science Olympiad</h1>
@@ -68,29 +79,64 @@
 			<!-- One -->
 				<section class="wrapper style2">
 					<div class="inner intext">
-						<header class="align-center" data-aos="fade-right">
+						<header class="align-center" data-aos="fade-up" data-aos-duration="3000">
 							<h2>Who Are We?</h2>
 							<p>AHS Science Olympiad consists of Team Blue and Team Red, each composed of 15 members. Each team member competes in 3-4 events spanning STEM subjects ranging from biology to engineering. Over the past few years, our teams have worked tremendously hard, each member clocking in at over 5 hours of dedicated work per week, both throughout the season and during offseason. American Science Olympiad is currently ranked 2nd throughout the highly competetive San Francisco Bay Area regional division and this is our sixth year qualifying for the Northern California States Tournament. With more ambition, rigourous preparation from our team, and stronger leadership than ever, we hope to reach our goal of being top 3 at states this season.</p>
               <a href="teammembers.html" class="button big alt scrolly">Team Members</a>
 						</header>
 
-            <header class="align-center" data-aos="fade-left">
+            <header class="align-center" data-aos="fade-up">
 							<h2>What is Science Olympiad?</h2>
 							<!--<p></p> -->
               
               <p>Science Olympiad is a competition for middle (Division B) and high school (Division C) students featuring 23 events in many fields of science and engineering. Teams of up to 15 students work in pairs on a variety of events ranging from earth sciences to biological/ life sciences, chemistry, physics, and engineering events. One of the most unique features of Science Olympiad is that there are events for everyone — be it build or theory, one can explore their various interests through events such as Anatomy, Protein Modeling, and Wright Stuff! Competitions are held at regional, states, and national levels and invitiationals are conducted throughout the season.</p>
               <a href="https://www.soinc.org" class="button big alt scrolly">Learn More</a>
+              <div id = "donate"></div>
 						</header>
 
             <header class="align-center" data-aos="fade-up">
 							<h2>Support the Team!</h2>
 							<!--<p></p> -->
               
-              <p>If you are interested in donating to American High School Science Olympiad to help our team buy build materials, cover competition fees, and help us excel this season, please donate here.</p>
-              <a href="https://www.paypal.me/bfu2" class="button big alt scrolly">Donate</a>
+              <p>Science Olympiad is solely run on crowdfunding and sponsorships as we do not receive any financial aid from the school. Any monetary donation helps and be rest assured it will be put to good use in the form of build materials, competition fees, facility expenses, advisor stipends and more. Additionally, if you are interested in donating materials and other equipment which may benefit our team such as balsa wood and discounted food for competitions, please visit our contact us page and fill out the form attached. Click the button below to donate to AHS Science Olympiad today!</p>
+              <a href="https://www.paypal.me/bfu2" class="button big alt scrolly" target="_blank">Donate</a>
 						</header>
 					</div>
 				</section>
+
+        <section class = "wrapper style3">
+        <div class = "inner align-center">
+          <header>
+						<h2>Team Statistics</h2>
+					</header>
+
+          <div class = "flex flex-3" id = "stats">
+            <div class = "col">
+              <header>
+                <i class="fa fa-star" style="font-size:40px;"></i>
+                <h2 class = "numm" id = "teams">2</h2>
+                Teams
+              </header>
+            </div>
+
+            <div class = "col">
+              <header>
+                <i class="fa fa-users" style="font-size:40px;"></i>
+                <h2 class = "numm" id = "members">30</h2>
+                Dedicated Members
+              </header>
+            </div>
+
+            <div class = "col">
+              <header>
+                <i class="fa fa-trophy" style="font-size:40px;"></i>
+                <h2 class = "numm" id = "medals">68</h2>
+                Medals the Past Season
+              </header>
+            </div>
+          </div>
+        </div>
+      </section>
 
 			<!-- Two -->
 				<section class="wrapper style">
@@ -326,11 +372,80 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 
       <script>
+        /* $(window).load(function() {
+          $('#loading').hide();
+        });*/
+
+
+        var scroll = false;
         AOS.init({
-          duration: 1200,
+          duration: 1000,
         })
+
+        function animateValue(id, start, end, duration) {
+            // assumes integer values for start and end
+            
+            var obj = document.getElementById(id);
+            var range = end - start;
+            // no timer shorter than 50ms (not really visible any way)
+            var minTimer = 50;
+            // calc step time to show all interediate values
+            var stepTime = Math.abs(Math.floor(duration / range));
+            
+            // never go below minTimer
+            stepTime = Math.max(stepTime, minTimer);
+            
+            // get current time and calculate desired end time
+            var startTime = new Date().getTime();
+            var endTime = startTime + duration;
+            var timer;
+          
+            function run() {
+                var now = new Date().getTime();
+                var remaining = Math.max((endTime - now) / duration, 0);
+                var value = Math.round(end - (remaining * range));
+                obj.innerHTML = value;
+                if (value == end) {
+                    clearInterval(timer);
+                }
+            }
+            
+            timer = setInterval(run, stepTime);
+            run();
+        }
+
+        $.fn.isInViewport = function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+
+        $(window).on('resize scroll', function() {
+            if ($('#stats').isInViewport() && !scroll) {
+              scroll = true;
+              animateValue("teams", 0, 2, 400)
+              animateValue("members", 0, 30, 2000)
+              animateValue("medals", 0, 68, 4000)
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var modal = document.getElementsByClassName("alert")[0];
+        var span = document.getElementById("close2");
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
       </script>
 
 	</body>

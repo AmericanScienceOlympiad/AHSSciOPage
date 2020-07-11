@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body class="subpage">
 
@@ -30,6 +31,7 @@
           <li><a href="timeline.html">Past, Present, and Future</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact Us!</a></li>
+          <li><a href="index.html#donate"><strong>Donate</strong></a></li>
 				</ul>
 			</nav>
 
@@ -54,7 +56,7 @@
 						</header>
 
 						<p> None (yet!) </p>
-            <a href = "contact.html"> Interested in becoming a team sponsor? </a>
+            <a href = "contact.html"> Interested in becoming a team sponsor? Click here!</a>
 					</div>
 				</section>
 
@@ -63,22 +65,30 @@
 					<div class="inner">
 						<header class="align-center">
 							<h2>Event Sponsors</h2>
-							<p>Sponsors who helped us out at specific events.</p>
+							<p>Sponsors who helped us out at specific events. (Click to visit their websites.)</p>
 						</header>
 
             <div class="flex flex-3">
-                <div class="video col">
-                  <a href = "https://itea-fremont-boulevard.business.site">
+                <div class="video col" data-aos="fade-up">
+                  <a href = "https://itea-fremont-boulevard.business.site" target="_blank" rel="noopener">
 									<div class="image fit">
-										<img src="https://cdn.doordash.com/media/restaurant/cover/iTeaBurlingame34694010.png" alt="" />
+										<img src="https://cdn.doordash.com/media/restaurant/cover/iTeaBurlingame34694010.png" alt="iTea" />
 									</div>
                   </a>
 								</div>
 
-                <div class="video col">
+                <div class="video col" data-aos="fade-up">
 									<div class="image fit">
-                    <a href = "https://beyondacademyca.org">
-										<img src="https://img1.wsimg.com/isteam/ip/639904bd-3e49-4918-bf04-991e70fa9358/GooglePlusProfilePhoto.png/:/rs=h:154/ll" alt="" />
+                    <a href = "https://beyondacademyca.org" target="_blank" rel="noopener">
+										<img src="https://img1.wsimg.com/isteam/ip/639904bd-3e49-4918-bf04-991e70fa9358/GooglePlusProfilePhoto.png/:/rs=h:154/ll" alt="Beyond Academy" height = "200px" id = "beyond"/>
+                    </a>
+									</div>
+								</div>
+
+                <div class="video col" data-aos="fade-up">
+									<div class="image fit">
+                    <a href = "https://www.doublegood.com" target="_blank" rel="noopener">
+										<img src="data:image/png;base64,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" alt="DoubleGood" height = "200px" id = "beyond"/>
                     </a>
 									</div>
 								</div>
@@ -101,6 +111,13 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init({
+          duration: 1000,
+        })
+      </script>
 
 	</body>
 </html>
