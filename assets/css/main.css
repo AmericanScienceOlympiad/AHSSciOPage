@@ -4065,7 +4065,7 @@
   margin: auto;
 }
 
-.alert {
+.alert1 {
   position:fixed;
   width: 80%;
   z-index: 200;
@@ -4079,7 +4079,7 @@
   color: rgb(116, 116, 131);
 }
 
-.alert a{
+.alert1 a{
   color:rgb(39, 39, 97);
 }
 
