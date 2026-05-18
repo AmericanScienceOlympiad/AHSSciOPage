@@ -9,23 +9,127 @@
 		<title>AHS SciOly | Team</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<style>
+
+			/* ===== TEAM TITLE SECTION ===== */
+
+			#titles {
+				padding-bottom: 3rem;
+			}
+
+			#titles header {
+				padding: 4rem 0 1rem 0 !important;
+			}
+
+			#titles h2 {
+				font-size: 5rem;
+				margin-bottom: 1rem;
+				line-height: 1.1;
+			}
+
+			#titles p {
+				font-size: 2rem;
+				line-height: 1.6;
+				margin-bottom: 2rem;
+			}
+
+			.team-photo {
+				max-width: 800px;
+				margin: 2rem auto;
+				display: block;
+			}
+
+			.team-photo img {
+				width: 100%;
+				height: auto;
+				border-radius: 12px;
+				box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+			}
+
+			/* ===== OFFICER CARDS ===== */
+
+			.officer-row {
+				display: flex;
+				justify-content: center;
+				gap: 2rem;
+				margin-bottom: 2rem;
+				flex-wrap: wrap;
+			}
+
+			.officer-card {
+				background: rgba(255,255,255,0.03);
+				border-radius: 12px;
+				padding: 2rem;
+				max-width: 400px;
+				transition: transform 0.3s ease;
+			}
+
+			.officer-card:hover {
+				transform: translateY(-5px);
+			}
+
+			.officer-card h5 {
+				font-size: 1.2rem;
+				margin-bottom: 1rem;
+			}
+
+			/* ===== TEAM ROSTERS ===== */
+
+			.roster-section {
+				display: flex;
+				gap: 2rem;
+				align-items: flex-start;
+				flex-wrap: wrap;
+			}
+
+			.roster-column {
+				flex: 1;
+				min-width: 250px;
+			}
+
+			.roster-column h3 {
+				text-align: center;
+			}
+
+			/* ===== MOBILE ===== */
+
+			@media screen and (max-width: 736px) {
+
+				#titles h2 {
+					font-size: 3rem;
+				}
+
+				#titles p {
+					font-size: 1.2rem;
+				}
+
+				.team-photo {
+					margin: 1.5rem auto;
+				}
+
+			}
+
+		</style>
 	</head>
 
 	<body class="subpage">
 
-		<!-- Header -->
+		<!-- HEADER -->
 		<header id="header">
 			<h1>
 				<a href="index.html">
 					Science Olympiad <span>American High School</span>
 				</a>
 			</h1>
+
 			<a href="#menu">Menu</a>
 		</header>
 
-		<!-- Nav -->
+		<!-- NAV -->
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
@@ -39,41 +143,40 @@
 			</ul>
 		</nav>
 
-		<!-- Main -->
+		<!-- MAIN -->
 		<div id="main">
 
-			<!-- TITLE -->
+			<!-- TITLE SECTION -->
 			<section class="wrapper style2" id="titles">
+
 				<div class="inner">
-			
-					<header class="align-center" style="padding: 5rem 0 2rem 0;">
-			
-						<h2 style="font-size: 5rem; margin-bottom: 1rem; line-height: 1.1;">
+
+					<header class="align-center">
+
+						<h2>
 							Meet the Team!
 						</h2>
-			
-						<p style="font-size: 2rem; line-height: 1.6; margin-bottom: 3rem;">
+
+						<p>
 							The dedicated students who make this possible.
 						</p>
-			
+
 					</header>
-			
+
 					<!-- TEAM IMAGE -->
-					<div class="image fit"
-					     data-aos="fade-up"
-					     style="
-							max-width: 800px;
-							margin: 0 auto 5rem auto;
-							display: block;
-					     ">
-						<img src="images/ahs2024.png" alt="Team Photo" style="width:100%; height:auto;" />
+					<div class="image fit team-photo" data-aos="fade-up">
+
+						<img src="images/ahs2024.png" alt="Team Photo" />
+
 					</div>
-			
+
 				</div>
+
 			</section>
 
 			<!-- OFFICERS -->
 			<section class="wrapper style1">
+
 				<div class="inner">
 
 					<header class="align-center">
@@ -81,18 +184,16 @@
 					</header>
 
 					<!-- ROW 1 -->
-					<div class="flex flex-2" style="justify-content:center; gap:2rem; margin-bottom:2rem;">
+					<div class="officer-row">
 
-						<div class="box col" style="max-width:400px;" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Shiven Patel - President</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Electric Vehicle, Robot Tour</p>
 						</div>
 
-						<div class="box col" style="max-width:400px;" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Rishventh Ramoshan - Vice President</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Fossils, Entomology</p>
 						</div>
@@ -100,25 +201,22 @@
 					</div>
 
 					<!-- ROW 2 -->
-					<div class="flex flex-3" style="justify-content:center; gap:2rem; margin-bottom:2rem;">
+					<div class="officer-row">
 
-						<div class="box col" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Alex Francavilla - Build Events Captain</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Fermi Questions, Tower</p>
 						</div>
 
-						<div class="box col" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Sahana Sujith - Theory Events Captain</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Astronomy, Geo-Mapping</p>
 						</div>
 
-						<div class="box col" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Srithan Devarashetty - Treasurer</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Anatomy and Physiology, Designer Genes</p>
 						</div>
@@ -126,18 +224,16 @@
 					</div>
 
 					<!-- ROW 3 -->
-					<div class="flex flex-2" style="justify-content:center; gap:2rem;">
+					<div class="officer-row">
 
-						<div class="box col" style="max-width:400px;" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Amruta Venumbaka - Secretary</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Disease Detectives, Anatomy and Physiology</p>
 						</div>
 
-						<div class="box col" style="max-width:400px;" data-aos="fade-up">
+						<div class="officer-card" data-aos="fade-up">
 							<h5>Anindita Rajakrishnan - Publicist</h5>
-							<div class="image fit"></div>
 							<p>TBD</p>
 							<p><b>Favorite SciOly Event(s):</b> Anatomy and Physiology, Disease Detectives</p>
 						</div>
@@ -145,43 +241,44 @@
 					</div>
 
 				</div>
+
 			</section>
 
-			<!-- TEAM MEMBERS -->
+			<!-- TEAM ROSTERS -->
 			<section class="wrapper">
+
 				<div class="inner intext">
 
 					<header class="align-center">
 						<h2>Team Rosters</h2>
 					</header>
 
-					<!-- ABOUT SECTION -->
+					<!-- ABOUT -->
 					<div data-aos="fade-up">
 
-						<div class="col">
-							<h3>About Our Teams</h3>
+						<h3>About Our Teams</h3>
 
-							<p>
-								All students attending American High School are welcome
-								to try out for our teams at the beginning of the year.
-								Each year, we choose 15 people for each team. Our tryout
-								process entails trying out for specific events covering
-								all the theory subjects, as well as builds that individuals
-								are interested in. Once teams are selected, each student
-								competes in 3-4 events along with a partner or trio.
-								AHS regularly attends the Golden Gate Invitational,
-								Bay Area Regional Science Olympiad, and Northern California
-								States competitions.
-							</p>
-						</div>
+						<p>
+							All students attending American High School are welcome
+							to try out for our teams at the beginning of the year.
+							Each year, we choose 15 people for each team. Our tryout
+							process entails trying out for specific events covering
+							all the theory subjects, as well as builds that individuals
+							are interested in. Once teams are selected, each student
+							competes in 3-4 events along with a partner or trio.
+							AHS regularly attends the Golden Gate Invitational,
+							Bay Area Regional Science Olympiad, and Northern California
+							States competitions.
+						</p>
 
 					</div>
 
 					<!-- ROSTERS -->
-					<div class="flex flex-3" style="gap:2rem; align-items:flex-start;">
+					<div class="roster-section">
 
 						<!-- BLUE TEAM -->
-						<div class="col" data-aos="fade-right">
+						<div class="roster-column" data-aos="fade-right">
+
 							<h3>Blue Team</h3>
 
 							<ul class="alt">
@@ -201,10 +298,12 @@
 								<li>Abhinav Shivalli</li>
 								<li>Srithan Deverashetty</li>
 							</ul>
+
 						</div>
 
 						<!-- RED TEAM -->
-						<div class="col" data-aos="fade-up">
+						<div class="roster-column" data-aos="fade-up">
+
 							<h3>Red Team</h3>
 
 							<ul class="alt">
@@ -224,10 +323,12 @@
 								<li>Pavan Sai Sunkesula</li>
 								<li>Shivani Peri</li>
 							</ul>
+
 						</div>
 
 						<!-- WHITE TEAM -->
-						<div class="col" data-aos="fade-left">
+						<div class="roster-column" data-aos="fade-left">
+
 							<h3>White Team</h3>
 
 							<ul class="alt">
@@ -247,25 +348,29 @@
 								<li>Shrey Shah</li>
 								<li>Aarna Tammana</li>
 							</ul>
+
 						</div>
 
 					</div>
 
 				</div>
+
 			</section>
 
 		</div>
 
 		<!-- FOOTER -->
 		<footer id="footer">
+
 			<div class="copyright">
 				&copy; AHS SciOly.
 				Design:
 				<a href="https://templated.co">TEMPLATED</a>.
 			</div>
+
 		</footer>
 
-		<!-- Scripts -->
+		<!-- SCRIPTS -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
@@ -274,9 +379,12 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<script>
+
 			AOS.init({
 				duration: 1000,
+				once: true
 			});
+
 		</script>
 
 	</body>
