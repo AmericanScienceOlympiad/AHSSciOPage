@@ -43,19 +43,48 @@
 		========================= */
 
 		.alumni-row {
-			display: flex;
-			justify-content: center;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 			gap: 2rem;
 			margin-bottom: 2rem;
-			flex-wrap: wrap;
+		}
+
+		@media screen and (max-width: 980px) {
+			.alumni-row {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.alumni-row {
+				grid-template-columns: 1fr;
+			}
 		}
 
 		.alumni-card {
+			position: relative;
+			overflow: hidden;
 			background: rgba(255,255,255,0.03);
 			padding: 2rem;
 			border-radius: 12px;
-			max-width: 400px;
 			transition: transform 0.3s ease;
+		}
+
+		.alumni-card::before {
+			content: '';
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			background-image: var(--uni-logo);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			opacity: 0.12;
+			z-index: 0;
+		}
+
+		.alumni-card > * {
+			position: relative;
+			z-index: 1;
 		}
 
 		.alumni-card:hover {
@@ -190,7 +219,7 @@
 
 				<div class="alumni-row">
 
-					<div class="alumni-card" data-aos="fade-up">
+					<div class="alumni-card" data-aos="fade-up" style="--uni-logo: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/The_University_of_California_UCLA.svg/1200px-The_University_of_California_UCLA.svg.png');">
 						<div class="grad-year">Class of 2025</div>
 						<h5>Vaishal Karpuram</h5>
 						<p><b>University & Major:</b> UCLA, B.S. Electrical Engineering</p>
@@ -198,7 +227,7 @@
 						<p><b>Favorite SciOly Event(s):</b> TBD</p>
 					</div>
 
-					<div class="alumni-card" data-aos="fade-up">
+					<div class="alumni-card" data-aos="fade-up" style="--uni-logo: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/The_University_of_California_UCLA.svg/1200px-The_University_of_California_UCLA.svg.png');">
 						<div class="grad-year">Class of 2026</div>
 						<h5>Advaiyth Suchith</h5>
 						<p><b>University & Major:</b> UCLA, Molecular, Cell, and Developmental Biology (Undergrad)</p>
@@ -206,7 +235,7 @@
 						<p><b>Favorite SciOly Event(s):</b> Anatomy, Designer Genes, Disease Detectives, Water Quality</p>
 					</div>
 
-					<div class="alumni-card" data-aos="fade-up">
+					<div class="alumni-card" data-aos="fade-up" style="--uni-logo: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/44/University_of_California%2C_San_Diego_seal.svg/1200px-University_of_California%2C_San_Diego_seal.svg.png');">
 						<div class="grad-year">Class of 2025</div>
 						<h5>Kunal Shah</h5>
 						<p><b>University & Major:</b> UCSD, Math / Computer Science (Undergrad)</p>
@@ -218,7 +247,7 @@
 
 				<div class="alumni-row">
 
-					<div class="alumni-card" data-aos="fade-up">
+					<div class="alumni-card" data-aos="fade-up" style="--uni-logo: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Georgia_Tech_seal.svg/1200px-Georgia_Tech_seal.svg.png');">
 						<div class="grad-year">Class of 2021</div>
 						<h5>Ojasw Upadhyay</h5>
 						<p><b>University & Major:</b> Georgia Tech, M.S. Computer Science</p>
