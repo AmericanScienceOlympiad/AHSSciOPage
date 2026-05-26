@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>AHS SciOly | Alumni</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<style>
+
+		/* =========================
+		   TITLE SECTION
+		========================= */
+
+		#titles {
+			padding-bottom: 3rem;
+		}
+
+		#titles header {
+			padding: 4rem 0 1rem 0 !important;
+		}
+
+		#titles h2 {
+			font-size: 5rem;
+			margin-bottom: 1rem;
+			line-height: 1.1;
+		}
+
+		#titles p {
+			font-size: 2rem;
+			line-height: 1.5;
+			margin-bottom: 2rem;
+			color: rgba(255,255,255,0.7);
+		}
+
+		/* =========================
+		   ALUMNI CARDS
+		========================= */
+
+		.alumni-row {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			margin-bottom: 2rem;
+			flex-wrap: wrap;
+		}
+
+		.alumni-card {
+			background: rgba(255,255,255,0.03);
+			padding: 2rem;
+			border-radius: 12px;
+			max-width: 400px;
+			transition: transform 0.3s ease;
+		}
+
+		.alumni-card:hover {
+			transform: translateY(-5px);
+		}
+
+		.alumni-card h5 {
+			font-size: 2rem;
+			line-height: 1.2;
+			margin-bottom: 0.8rem;
+			font-weight: 800;
+			color: #ffffff;
+			letter-spacing: -0.02em;
+		}
+
+		.alumni-card .grad-year {
+			font-size: 1.1rem;
+			color: rgba(255,255,255,0.5);
+			margin-bottom: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+		}
+
+		.alumni-card p {
+			font-size: 1.2rem;
+			line-height: 1.7;
+			margin-bottom: 0.8rem;
+		}
+
+		/* =========================
+		   ALUMNI ROSTER TABLE
+		========================= */
+
+		.alumni-grid {
+			display: flex;
+			gap: 2rem;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.alumni-year-block {
+			flex: 1;
+			min-width: 220px;
+			max-width: 320px;
+		}
+
+		.alumni-year-block h3 {
+			text-align: center;
+			border-bottom: 1px solid rgba(255,255,255,0.15);
+			padding-bottom: 0.5rem;
+			margin-bottom: 1rem;
+		}
+
+		/* =========================
+		   MOBILE
+		========================= */
+
+		@media screen and (max-width: 736px) {
+
+			#titles h2 {
+				font-size: 3rem;
+			}
+
+			#titles p {
+				font-size: 1.2rem;
+			}
+
+			.alumni-card h5 {
+				font-size: 1.6rem;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+<body class="subpage">
+
+	<!-- HEADER -->
+
+	<header id="header">
+		<h1>
+			<a href="index.html">
+				Science Olympiad
+				<span>American High School</span>
+			</a>
+		</h1>
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- NAV -->
+
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#main">About Us</a></li>
+			<li><a href="teammembers.html">Team Members</a></li>
+			<li><a href="alumni.html">Alumni</a></li>
+			<li><a href="sponsors.html">Sponsors</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="timeline.html">Past, Present, and Future</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li><a href="contact.html">Contact Us!</a></li>
+		</ul>
+	</nav>
+
+	<!-- MAIN -->
+
+	<div id="main">
+
+		<!-- TITLE SECTION -->
+
+		<section class="wrapper style2" id="titles">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Our Alumni</h2>
+					<p>The former members who built this program into what it is today.</p>
+				</header>
+			</div>
+		</section>
+
+		<!-- NOTABLE ALUMNI (officer-card style — edit names/info as needed) -->
+
+		<section class="wrapper style1">
+			<div class="inner">
+
+				<header class="align-center">
+					<h2>Alumni</h2>
+					<p style="color:rgba(255,255,255,0.6); font-size:1.2rem;">Former members of AHS Science Olympiad. Add more cards as the program grows!</p>
+				</header>
+
+				<div class="alumni-row">
+
+					<div class="alumni-card" data-aos="fade-up">
+						<div class="grad-year">Class of 20XX</div>
+						<h5>Vaishal Karpuram</h5>
+						<p><b>University:</b> UCLA</p>
+						<p><b>Major:</b> Electrical Engineering (Undergraduate)</p>
+						<p><b>Favorite SciOly Event(s):</b> TBD</p>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+
+	</div>
+
+	<!-- FOOTER -->
+
+	<footer id="footer">
+		<div class="copyright">
+			&copy; AHS SciOly.
+			Design: <a href="https://templated.co">TEMPLATED</a>.
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: true
+		});
+	</script>
+
+</body>
+</html>
